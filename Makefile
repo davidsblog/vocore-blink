@@ -1,5 +1,4 @@
-BASE=/home/$$USER/openwrt
-STAGE=$(BASE)/staging_dir
+STAGE=`find /home -name staging_dir -print -quit`
 OWBIN=$(STAGE)/toolchain-mipsel_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin
 CC=$(OWBIN)/mipsel-openwrt-linux-uclibc-gcc
 
