@@ -1,4 +1,4 @@
-BASE=$(HOME)/openwrt
+BASE=$$HOME/openwrt
 STAGE=$(BASE)/staging_dir
 OWBIN=$(STAGE)/toolchain-mipsel_r2_gcc-4.6-linaro_uClibc-0.9.33.2/bin
 CC=$(OWBIN)/mipsel-openwrt-linux-uclibc-gcc
