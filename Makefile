@@ -3,7 +3,7 @@ STAGE=`find /home -type d -name staging_dir -print -quit -print 2>/dev/null`
 
 blinkmake: blink.c
 	export STAGING_DIR=$(STAGE); \
-	echo "STAGING_DIR was set to: $$STAGING_DIR"; \
+	echo $$STAGING_DIR \
 	$(CC) -o blink -Os -s blink.c
 
 .PHONY: clean
