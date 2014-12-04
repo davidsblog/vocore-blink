@@ -17,12 +17,12 @@ int main(int argc, char **argv)
       if (i % 2)
       {
          fwrite("255", 1, 3, fp);
-         printf("+");
+         printf("ON ");
       }
       else
       {
          fwrite("0", 1, 1, fp);
-         printf("-");
+         printf("OFF ");
       }
       fflush(fp);
       fflush(stdout);
